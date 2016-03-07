@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core" xmlns:pt="http://xmlns.jcp.org/jsf/passthrough" xmlns:p="http://primefaces.org/ui" xmlns:jsf="http://xmlns.jcp.org/jsf">
+
+<h:head>
+	<title>SR03</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" type="text/css" href="./SR03_files/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="./SR03_files/jquery.mmenu.all.css" />
+	<link rel="stylesheet" type="text/css" href="./SR03_files/fonts.css" />
+	<link rel="stylesheet" type="text/css" href="./SR03_files/mystyle.css" />
+	<script src="./SR03_files/jquery-2.2.0.min.js" />
+	<script src="./SR03_files/bootstrap.min.js" />
+<script>var old = null;function asplay_top(c){var audio = document.createElement("audio");if(audio != null &amp;&amp; audio.canPlayType &amp;&amp; audio.canPlayType("audio/mpeg")){if(old){old.pause();}audio.src = c;old = audio;audio.play();}}</script></h:head>
+
+<h:body id="page">
+	<header id="MainBar">
+		<div id="LightGreyNav">
+			<div class="container clearfix">
+				<h2>SR03 - Projet WEB</h2>
+			</div>
+		</div>
+	</header>
+	<main id="PageContenu" class="container" style="margin-top: 60px">
+		
+			<section class="BlocAppli clearfix">			
+					<ul id="NavAdd" class="NavOnglets clearfix" role="tablist">
+								<li role="mymenu" class="">									
+									<a href="https://webapplis.utc.fr/sr03/index.xhtml#6" aria-controls="6" role="tab" data-toggle="tab" aria-expanded="false">Présentation</a>
+								</li>
+								<li role="mymenu" class="">									
+									<a href="https://webapplis.utc.fr/sr03/index.xhtml#8" aria-controls="8" role="tab" data-toggle="tab" aria-expanded="false">HTTP</a>
+								</li>
+								<li role="mymenu">									
+									<a href="https://webapplis.utc.fr/sr03/index.xhtml#12" aria-controls="12" role="tab" data-toggle="tab">CSS</a>
+								</li>
+								<li role="mymenu" class="">									
+									<a href="https://webapplis.utc.fr/sr03/index.xhtml#13" aria-controls="13" role="tab" data-toggle="tab" aria-expanded="false">JavaScript</a>
+								</li>
+								<li role="mymenu" class="">									
+									<a href="https://webapplis.utc.fr/sr03/index.xhtml#20" aria-controls="20" role="tab" data-toggle="tab" aria-expanded="false">Projet n°1</a>
+								</li>
+								<li role="mymenu" class="active">									
+									<a href="https://webapplis.utc.fr/sr03/index.xhtml#30" aria-controls="30" role="tab" data-toggle="tab" aria-expanded="true">Projet n°2</a>
+								</li>
+								<li role="mymenu" class="">									
+									<a href="https://webapplis.utc.fr/sr03/index.xhtml#40" aria-controls="40" role="tab" data-toggle="tab" aria-expanded="false">Projet n°3</a>
+								</li>
+								
+					</ul>
+										
+					<div class="tab-content clearfix contentedit">
+									<div id="6" role="tabpanel" class="tab-pane fade">
+										<article class="LeContenu col-md-8 col-sm-6">
+										<h2>Présentation</h2>
+										<p><strong>
+										  Le but de cette partie d'UV est de découvrir le monde du WEB.<br />
+										  A travers un projet, nous apprendrons à utiliser: </strong>
+										</p>
+										<ul>
+										<li>les requêtes HTTP</li>
+										<li>HTML pour afficher vos pages web</li>
+										<li>CSS pour styler vos pages web</li>
+										<li>Javascript pour établir des contrôles sur vos pages web</li>
+										<li>PHP ou J2EE pour rendre dynamique vos pages web</li> 
+										<li>un webservice REST qui retourne des données en type JSON</li> 
+										</ul>
+										
+										<p><strong>Je vous propose 3 projets, vous devrez choisir entre le projet 1 ou 2. ( Obligatoire )
+										<br />Le projet 3 sera un projet Bonus basé sur du développement Android. ( Facultatif )</strong></p>
+										<p><strong>Déroulement du projet :</strong></p>
+										<ul>
+										<li>3 séances de travail de 3h ( semaine 10,11,12 )</li>
+										<li>1 séance de soutenance avec un rapport à me fournir ce jour-là ( semaine 14 )</li>
+										<li>Pendant les séances de travail, je serais disponible à toutes vos questions et à vous aider pour l'avancement de votre projet</li>
+										</ul>
+										</article>
+										
+									</div>
+									<div id="8" role="tabpanel" class="tab-pane fade">
+										<article class="LeContenu col-md-8 col-sm-6">
+										<h2>Génération et observation de trafic HTTP</h2>
+										<p>Une bonne compréhension du fonctionnement du protocole HTTP est indispensable aux spécialistes des technologies du web. Voici un exemple d'un échange avec HTTP :</p>
+										<p><strong>REQUETE HTTP (assortie ici de nombreux en-têtes HTTP, dont aucun n'est obligatoire)</strong></p>
+										<blockquote>
+										<strong>GET /images/udoggy.gif HTTP/1.0</strong><br />
+										Host: www.google.fr<br />
+										User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.7) Gecko/2011021910 Firefox/3.0.7<br />
+										Accept: image/png,image/*;q=0.8,*/*;q=0.5<br />
+										Accept-Language: en-us,en;q=0.5<br />
+										Accept-Encoding: gzip,deflate<br />
+										Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7<br />
+										Keep-Alive: 300<br />
+										Proxy-Connection: keep-alive<br />
+										Referer: http://www.google.fr/<br />
+										Cookie: PREF=ID=c2fa4cbfecb40683:TM=1235645658:LM=1235645658<br />
+										Pragma: no-cache<br />
+										Cache-Control: no-cache<br />
+										</blockquote>
+										<p><strong>REPONSE HTTP (assortie ici d'en-têtes HTTP et de données)</strong></p>
+										<blockquote>
+										<p><strong>HTTP/1.0 200 OK</strong></p>
+										Content-Type: image/gif<br />
+										Last-Modified: Wed, 07 Jun 2006 19:44:03 GMT<br />
+										Expires: Sun, 17 Jan 2038 19:14:07 GMT<br />
+										Cache-Control: public<br />
+										Date: Wed, 25 Mar 2011 09:22:28 GMT<br />
+										Server: gws<br />
+										Content-Length: 8866<br />
+										Connection: Keep-Alive<br />
+										<br />
+										[ données de l'image ] 										
+										</blockquote>
+										<ul>
+										<li>Une "ligne blanche" (deux fins de ligne successives) est utilisée pour marquer fin des en-têtes.</li>
+										<li>Attention au "mode dégradé" : un "vrai" échange en HTTP nécessite que la requête désigne la version de HTTP utilisée par le client<br />
+										(exemple : GET /images/udoggy.gif HTTP/1.0).<br />
+										Si le client initie un échange sans préciser la version du protocole<br />
+										(exemple : GET /images/udoggy.gif)<br />
+										le serveur va en général répondre en "mode dégradé", en envoyant (dans la mesure du possible) les données demandées, sans prendre en compte les en-têtes que le client pourrait envoyer, et sans aucun en-tête de réponse.
+										</li>
+										</ul>
+										
+										<h2>Conseils pratiques</h2>
+										<p>Aujourd'hui nous avons des outils graphique très interessants pour visualiser ces requêtes HTTP : </p>
+										<ul>
+										<li>Firebug pour le navigateur firefox</li> 
+										<li>Developer Tools pour le navigateur chrome</li> 
+										</ul>
+										<br />
+										<p>
+										Mais on peut également générer un échange HTTP sans l'aide d'un navigateur web.
+										</p>
+										<p>
+										 Depuis un shell (Terminal) utilisez l'utilitaire nc (syntaxe : nc serveur port).<br /> 
+										 Cet utilitaire établit une connexion TCP vers le serveur+port de votre choix, envoie au socket distant ce que vous tapez, et affiche ce que le socket distant renvoie. 
+										 <br />C'est un moyen pratique de déboguer les protocoles "non binaires".
+										</p>
+										
+										</article>
+										<aside class="col-md-4 col-sm-6">
+										<div class="Bloc BlocLink">
+										<h3>Sites utiles</h3>
+										<ul class="LinkZone">
+											<li><a href="https://fr.wikipedia.org/wiki/Liste_des_codes_HTTP">Liste des codes HTTP</a></li>
+											<li><a href="https://fr.wikipedia.org/wiki/Hypertext_Transfer_Protocol">Possibilités de HTTP</a></li>  
+										</ul>
+										</div>
+										
+										</aside>
+										
+									</div>
+							
+									<div id="12" role="tabpanel" class="tab-pane fade">
+										<article class="LeContenu col-md-8 col-sm-6">
+										<h2>CSS</h2>
+										<p>Pour mettre en forme vos pages web HTML, vous devrez utiliser le CSS.
+										<br />
+										   Pour maîtriser et comprendre les possibilités du CSS, je vous recommande le site w3schools.
+										<br />
+										   Pour gagner du temps dans votre développement, aujourd'hui ils existent beaucoup de framework CSS.<br />
+										   Le plus connu est Bootstrap, je vous recommande de l'utiliser pour mener votre projet.<br />
+										   Grace à Bootstrap, vos pages seront adaptées pour toute taille d'écran ( Responsive Design).
+										</p>
+										</article>
+										<aside class="col-md-4 col-sm-6">
+										<div class="Bloc BlocLink">
+										<h3>Sites utiles</h3>
+										<ul class="LinkZone">
+											<li><a href="http://www.w3schools.com/css/">w3schools CSS</a></li>
+											<li><a href="http://getbootstrap.com/">Framework Bootstrap</a></li>  
+										</ul>
+										</div>
+										
+										</aside>
+										
+									</div>
+									<div id="13" role="tabpanel" class="tab-pane fade">
+										<article class="LeContenu col-md-8 col-sm-6">
+										<h2>Javascript</h2>
+										<p>Le javascript est très important, car ce langage permet de rendre dynamique et d'effectuer des contrôles sur vos pages web.</p>
+										<p>Pour alléger le langage, vous avez plein de frameworks qui existent. Un des plus complets et utilisés est JQuery.</p>
+										
+										</article>
+										<aside class="col-md-4 col-sm-6">
+										<div class="Bloc BlocLink">
+										<h3>Sites utiles</h3>										
+										<ul class="LinkZone">
+											<li><a href="http://www.w3schools.com/js/">w3schools Javascript</a></li>
+											<li><a href="https://jquery.com/">Framework JQuery</a></li>  
+										</ul>
+										</div>
+										</aside>
+										
+									</div>
+									<div id="20" role="tabpanel" class="tab-pane fade">
+										<article class="LeContenu col-md-8 col-sm-6">
+										<h2>Projet n°1 - Trombinoscope UTC </h2>
+										<p>Le but de ce projet est de faire un trombinoscope, pour cela vous devrez :</p>
+										<ul>
+											<li>Créer une page web Dynamique qui contiendra un formulaire avec comme champs prénom nom et qui affichera le résultat de votre recherche.</li>
+											<li>Dans votre formulaire, il faut contrôler qu'au moins un des deux champs soit rempli ( JAVASCRIPT ).</li>
+											<li>Vous devrez appeler un webservice de type REST qui vous retournera le résultat en JSON.</li>
+											<li>Avant d'appeler le webservice, vous devrez tester si il est disponible grâce au requête HTTP.</li>
+											<li>Pour la gestion de votre formulaire, vous devrez utiliser le langage PHP ou JAVA EE.</li>
+											<li>Votre trombinoscope devra être ergonomique et responsive design ( CSS ).</li>
+										</ul>
+										<h3>Informations</h3>
+										<ul>
+											<li>Url du webservice: https://webapplis.utc.fr/Trombi_ws/mytrombi/result?nom=martinet&amp;prenom=cedric</li>
+											<li>Url de la photo: https://demeter.utc.fr/portal/pls/portal30/portal30.get_photo_utilisateur_mini?username=cmarti04</li>
+										</ul>
+										<h3>Barème</h3>
+										<ul>
+											<li>Soutenance (6 pts)</li>
+											<li>Tests du site / Questions (5 pts)</li>
+											<li>Ergonomie (3 pts)</li>
+											<li>Rapport (6 pts)</li>
+										</ul>
+										</article>
+										
+									</div>
+									<div id="30" role="tabpanel" class="tab-pane fade active in">
+										<article class="LeContenu col-md-8 col-sm-6">
+										<h2>Projet n°2 - Affichage Graphique d'un emploi du temps d'un étudiant</h2>
+										<p>Le but de ce projet est d'afficher l'emploi du temps d'un étudiant en fonction du login, pour cela vous devrez :</p>
+										<ul>
+											<li>Créer une page web Dynamique qui contiendra un formulaire avec comme champ login et qui affichera le résultat de votre recherche.</li>
+											<li>Dans votre formulaire, il faut contrôler qu'au moins un des deux champs soit rempli ( JAVASCRIPT ).</li>
+											<li>Vous devrez appeler un webservice de type REST qui vous retournera le résultat en JSON.</li>
+											<li>Avant d'appeler le webservice, vous devrez tester si il est disponible grâce au requête HTTP.</li>
+											<li>Pour la gestion de votre formulaire, vous devrez utiliser le langage PHP ou JAVA EE.</li>
+											<li>L'emploi du temps de l'étudiant devra être ergonomique et responsive design ( CSS ).</li>
+										</ul>								
+										<h3>Informations</h3>
+										<ul>
+											<li>Url du webservice: https://webapplis.utc.fr/Edt_ent_rest/myedt/result?login=cmarti04</li>
+										</ul>
+										<h3>Barème</h3>
+										<ul>
+											<li>Soutenance (6 pts)</li>
+											<li>Tests du site / Questions (5 pts)</li>
+											<li>Ergonomie (3 pts)</li>
+											<li>Rapport (6 pts)</li>
+										</ul>
+										</article>
+											
+									</div>
+									<div id="40" role="tabpanel" class="tab-pane fade">
+										<article class="LeContenu col-md-8 col-sm-6">
+										<h2>Projet n°3</h2>
+										<p>Si vous avez terminé le projet n°1 ou n°2. Vous pouvez également faire ce projet.
+										<br />Pour cela, vous devez reprendre le sujet du projet n°1 ou n°2. 
+										<br />A la place de faire une interface WEB, vous devrez la développer sous Android ( Java ).
+										</p>
+										<h3>Barème</h3>
+										<ul>
+											<li>Soutenance (5 pts)</li>
+											<li>Tests de l'application / Questions (8 pts)</li>
+											<li>Ergonomie (7 pts)</li>
+											<li>Votre note sera une moyenne de ce projet avec le projet 1 ou 2</li>
+										</ul>
+										</article>
+											
+									</div>
+									
+					</div>
+				
+			</section>
+ </main>
+	
+	
+	
+	
+	
+	<footer>
+			<h2 id="Baseline">Université de technologie de compiègne</h2>
+	</footer>
+
+</h:body>
+</html>
