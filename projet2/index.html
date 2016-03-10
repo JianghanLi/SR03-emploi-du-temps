@@ -1,10 +1,13 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+
 <html>
 <head>
-	<link rel="stylesheet" href="timetablejs.css">
-	<script src="timetable.min.js"></script>
-	<script type="text/javascript">
+	<link rel="stylesheet" href="style/timetablejs.css">
+	<script src="lib/timetable.min.js"></script>
+	<script src="lib/jquery-1.12.1.min.js"></script>
+	<script src="https://webapplis.utc.fr/Edt_ent_rest/myedt/result?login=cmarti04"></script>
 	
+	<script type="text/javascript">
 	var response = [ {
 		"uv" : "LA93",
 		"type" : "TD",
@@ -95,6 +98,12 @@
 		"group" : "Groupe 1"
 	} ]
 	
+	function getLogin()
+	{
+		console.log($(".loginInput").val());
+		
+	}
+	
 	function drawTable() {
 		var timetable = new Timetable();
 		timetable.setScope(8, 20); // optional, only whole hours between 0 and 23
@@ -102,16 +111,46 @@
 		
 		for (var i = 0; i < response.length; ++i) {
 			var event = response[i];
-			console.log(event);
 			timetable.addEvent(event.uv + event.type, event.day, new Date(2016,1,1,event.begin.split(":")[0],event.begin.split(":")[1]), new Date(2016,1,1,event.end.split(":")[0],event.end.split(":")[1]));
-			console.log(timetable);
 			
 		}
 		var renderer = new Timetable.Renderer(timetable);
 		renderer.draw('.timetable'); // any css selector
 	}
+	
+	function changeColor() {
+		document.getElementsByClassName("time-entry");
+	}
+	
+	
+	//添加<script>标签的方法
+    function addScriptTag(src){
+        var script = document.createElement('script');
+        script.setAttribute("type","text/javascript");
+        script.src = src;
+        document.body.appendChild(script);
+    }
+    
+	function cb(data){
+		console.log(data);
+	}
+	
+	function httpGet()
+	{
+		var src = 'https://webapplis.utc.fr/Edt_ent_rest/myedt/result?login=cmarti04';
+		$.ajax({
+			url: src,
+			dataType: "jsonp",
+			jsonp: "callback",
+			jsonpCallback:"jsonpcallback",
+			done: function(data){
+				console.log(data)
+			}
+		});
+	}
+	
+	
 	</script>
-
 
 
 </head>
@@ -123,13 +162,14 @@
 
 	Url du webservice: https://webapplis.utc.fr/Edt_ent_rest/myedt/result?login=cmarti04
 
-	<form action="/example/html/form_action.asp" method="get">
-		<p>Login: <input type="text" name="login" /></p>
+	<form action="https://webapplis.utc.fr/Edt_ent_rest/myedt/result" method="get">
+		<p>Login: <input type="text" name="login" class="loginInput"/></p>
 		<input type="submit" value="Submit" />
 	</form>
 
-	<p>请单击确认按钮，输入会发送到服务器上</p>
-	<button class="action" onclick="drawTable()">Hello</button>
+	<button class="action" onclick="getLogin()">print login</button>
+	<button class="action" onclick="drawTable()">draw table</button>
+	<button class="action" onclick="httpGet()">send request</button>
 	<div class="timetable"></div>
 
 </body>
