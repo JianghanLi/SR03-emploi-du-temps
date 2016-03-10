@@ -97,11 +97,17 @@
 	
 	function drawTable() {
 		var timetable = new Timetable();
-		timetable.setScope(9, 17); // optional, only whole hours between 0 and 23
-		timetable.addLocations(['Silent Disco', 'Nile', 'Len Room', 'Maas Room']);
-		timetable.addEvent('Frankadelic', 'Nile', new Date(2015,7,17,10,45), new Date(2015,7,17,12,30));
+		timetable.setScope(8, 20); // optional, only whole hours between 0 and 23
+		timetable.addLocations(['LUNDI', 'MARDI', 'MERCREDI', 'JEUDI', 'VENDREDI', 'SAMEDI']);
+		
+		for (var i = 0; i < response.length; ++i) {
+			var event = response[i];
+			console.log(event);
+			timetable.addEvent(event.uv + event.type, event.day, new Date(2016,1,1,event.begin.split(":")[0],event.begin.split(":")[1]), new Date(2016,1,1,event.end.split(":")[0],event.end.split(":")[1]));
+			console.log(timetable);
+			
+		}
 		var renderer = new Timetable.Renderer(timetable);
-		console.log(timetable,renderer)
 		renderer.draw('.timetable'); // any css selector
 	}
 	</script>
