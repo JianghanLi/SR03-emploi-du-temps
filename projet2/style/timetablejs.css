@@ -165,21 +165,21 @@
     transform-style: preserve-3d
 }
 
-.timetable .time-entry.eventColor1 {background-color: #ff471a;} /* red */
-.timetable .time-entry.eventColor2 {background-color: #ffff00;} /* yellow */
-.timetable .time-entry.eventColor3 {background-color: #00ff00;} /* green*/
-.timetable .time-entry.eventColor4 {background-color: #0099ff;} /* blue */
-.timetable .time-entry.eventColor5 {background-color: #cc66ff;} /* purple */
-.timetable .time-entry.eventColor6 {background-color: #ff66ff;} /* pink */
-.timetable .time-entry.eventColor7 {background-color: #cc6600;} /* brown */
+.timetable .time-entry.eventColor1 {background-color: #91A8d0;} /* Serenity */
+.timetable .time-entry.eventColor2 {background-color: #91A8d0;} /* Serenity */
+.timetable .time-entry.eventColor3 {background-color: #91A8d0;} /* Serenity*/
+.timetable .time-entry.eventColor4 {background-color: #034f84;} /* Snorkel Blue */
+.timetable .time-entry.eventColor5 {background-color: #034f84;} /* Snorkel Blue */
+.timetable .time-entry.eventColor6 {background-color: #98ddde;} /* Limpet Shell */
+.timetable .time-entry.eventColor7 {background-color: #98ddde;} /* Limpet Shell */
 
-.timetable .time-entry.eventColor1:hover {background-color: #ff471a;} /* red */
-.timetable .time-entry.eventColor2:hover {background-color: #ffff00;} /* yellow */
-.timetable .time-entry.eventColor3:hover {background-color: #00ff00;} /* green*/
-.timetable .time-entry.eventColor4:hover {background-color: #0099ff;} /* blue */
-.timetable .time-entry.eventColor5:hover {background-color: #cc66ff;} /* purple */
-.timetable .time-entry.eventColor6:hover {background-color: #ff66ff;} /* pink */
-.timetable .time-entry.eventColor7:hover {background-color: #cc6600;} /* brown */
+.timetable .time-entry.eventColor1:hover {background-color: #f7cac9;} /* Rose Quartz */
+.timetable .time-entry.eventColor2:hover {background-color: #f7cac9;} /* Rose Quartz */
+.timetable .time-entry.eventColor3:hover {background-color: #f7cac9;} /* */
+.timetable .time-entry.eventColor4:hover {background-color: #dd4132;} /* Fiesta */
+.timetable .time-entry.eventColor5:hover {background-color: #dd4132;} /* */
+.timetable .time-entry.eventColor6:hover {background-color: #dd4132;} /* */
+.timetable .time-entry.eventColor7:hover {background-color: #dd4132;} /* */
 }
 
 .timetable .time-entry small {
