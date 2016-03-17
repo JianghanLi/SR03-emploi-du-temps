@@ -22,7 +22,8 @@
     float: left
 }
 .timetable aside {
-    width: 10%;
+
+    width: 10%; /* day width: 25%*/ 
     padding: 0!important;
     margin-top: 46px;
     border-right: 5px solid transparent
@@ -82,7 +83,7 @@
     position: relative
 }
 .timetable section header li:not(:last-of-type) {
-    width: 75px
+    width: 75px; /* event width: 96px*/
 }
 .timetable section header li .time-label {
     display: block;
@@ -148,7 +149,6 @@
     background-size: 96px auto;
     background-position: -2px 0
 }
-
 .timetable .time-entry {
     background-color: #EC6A5E;
     transition: 200ms background-color;
@@ -160,20 +160,11 @@
     white-space: normal;
     overflow: hidden;
     color: #fff;
-    border: 1px solid; /* #e32c1b;*/  
+	border: 1px;
+    /* event border: 1px solid #e32c1b; */
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d
 }
-
-.timetable .time-entry.eventColor1 {background-color: #91A8d0;} /* Serenity */
-.timetable .time-entry.eventColor2 {background-color: #91A8d0;} /* Serenity */
-.timetable .time-entry.eventColor3 {background-color: #91A8d0;} /* Serenity*/
-.timetable .time-entry.eventColor4 {background-color: #034f84;} /* Snorkel Blue */
-.timetable .time-entry.eventColor5 {background-color: #034f84;} /* Snorkel Blue */
-.timetable .time-entry.eventColor6 {background-color: #98ddde;} /* Limpet Shell */
-.timetable .time-entry.eventColor7 {background-color: #98ddde;} /* Limpet Shell */
-}
-
 .timetable .time-entry small {
     position: relative;
     top: 50%;
@@ -181,7 +172,14 @@
     transform: translateY(-50%);
     display: block
 }
-/*
 .timetable .time-entry:hover {
-    background-color: #e74030 
-}*/
+    /* background-color: #e74030 */
+}
+.timetable .time-entry.eventColor1 {background-color: #91A8d0;} /* Serenity */
+.timetable .time-entry.eventColor2 {background-color: #91A8d0;} /* Serenity */
+.timetable .time-entry.eventColor3 {background-color: #91A8d0;} /* Serenity*/
+.timetable .time-entry.eventColor4 {background-color: #034f84;} /* Snorkel Blue */
+.timetable .time-entry.eventColor5 {background-color: #034f84;} /* Snorkel Blue */
+.timetable .time-entry.eventColor6 {background-color: #98ddde;} /* Limpet Shell */
+.timetable .time-entry.eventColor7 {background-color: #98ddde;} /* Limpet Shell */
+
