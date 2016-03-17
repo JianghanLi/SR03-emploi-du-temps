@@ -49,8 +49,10 @@
 	<p>Étudiants : Luxin ZHANG, Jianghan LI</p>
 
 	<form action="http://tuxa.sme.utc/~sr03p021/" method="POST">
-		<p>Login: <input type="text" name="login" class="loginInput"/></p>
-		<input type="submit" value="Submit" />
+		<p>
+			Login: <input type="text" name="login" class="loginInput"/>
+			<input type="submit" value="Submit" />
+		</p>
 	</form>
 	<div class="timetable"></div>
 
