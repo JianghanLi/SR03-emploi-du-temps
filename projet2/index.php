@@ -37,8 +37,7 @@
 		request();
 		drawTable();		
 	}
-	</script>
-	
+	</script>	
 
 
 </head>
