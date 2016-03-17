@@ -16,7 +16,6 @@
 		echo $html;
 		?>;
 		console.log(response);
-		
 	}
 	function drawTable() {
 		var timetable = new Timetable();
@@ -31,7 +30,8 @@
 			
 		}
 		var renderer = new Timetable.Renderer(timetable);
-		renderer.draw('.timetable');
+		renderer.draw('.timetable'); // any css selector
+	}
 	
 	function main() {
 		request();
@@ -47,6 +47,7 @@
 	<h1>SR03</h1>
 	<p>Projet : AFFICHAGE GRAPHIQUE D'UN EMPLOI DU TEMPS D'UN ÉTUDIANT</p>
 	<p>Étudiants : Luxin ZHANG, Jianghan LI</p>
+
 	<form action="http://tuxa.sme.utc/~sr03p021/" method="POST">
 		<p>Login: <input type="text" name="login" class="loginInput"/></p>
 		<input type="submit" value="Submit" />
