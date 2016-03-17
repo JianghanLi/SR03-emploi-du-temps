@@ -93,9 +93,10 @@
 		"room" : "FB104",
 		"group" : "Groupe 1"
 	} ]
-	var login = $(".loginInput").val();
+	//var login = $(".loginInput").val();
 	var response = <?php
-		$url = "https://webapplis.utc.fr/Edt_ent_rest/myedt/result?login=" + login;
+		$login="<script type=text/javascript>$(".loginInput").val();</script>";
+		$url = "https://webapplis.utc.fr/Edt_ent_rest/myedt/result?login=" + $login;
 		$html = file_get_contents($url);
 		echo $html;
 	?>;
