@@ -23,7 +23,7 @@
 }
 .timetable aside {
 
-    width: 10%; /* day width: 25%*/ 
+    width: 12%; /* day width: 25%*/ 
     padding: 0!important;
     margin-top: 46px;
     border-right: 5px solid transparent
@@ -176,10 +176,10 @@
     /* background-color: #e74030 */
 }
 .timetable .time-entry.eventColor1 {background-color: #91A8d0;} /* Serenity */
-.timetable .time-entry.eventColor2 {background-color: #91A8d0;} /* Serenity */
-.timetable .time-entry.eventColor3 {background-color: #91A8d0;} /* Serenity*/
-.timetable .time-entry.eventColor4 {background-color: #034f84;} /* Snorkel Blue */
-.timetable .time-entry.eventColor5 {background-color: #034f84;} /* Snorkel Blue */
-.timetable .time-entry.eventColor6 {background-color: #98ddde;} /* Limpet Shell */
-.timetable .time-entry.eventColor7 {background-color: #98ddde;} /* Limpet Shell */
+.timetable .time-entry.eventColor2 {background-color: #68ddde;} /* Limpet Shell */
+.timetable .time-entry.eventColor3 {background-color: #035f94;} /* Snorkel Blue */
+.timetable .time-entry.eventColor4 {background-color: #5c85d6;} 
+.timetable .time-entry.eventColor5 {background-color: #7070db;} 
+.timetable .time-entry.eventColor6 {background-color: #66ccff;}
+.timetable .time-entry.eventColor7 {background-color: #66ccff;} 
 

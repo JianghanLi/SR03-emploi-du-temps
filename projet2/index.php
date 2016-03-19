@@ -1,14 +1,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
 <html>
 <head>
-	<link rel="stylesheet" href="./timetablejs.css">
+	<link rel="stylesheet" href="style/timetablejs.css">
+	<link rel="stylesheet" href="style/button.css">
+	<link rel="stylesheet" href="style/jianghanStyle.css">
+	<script src="lib/timetable.min.js"></script>
 	<script src="lib/jquery-1.12.1.min.js"></script>
-	<script src="./timetable.min.js"></script>
+	<script type="text/javascript" src="drawTable.js"></script>
 	<script type="text/javascript">
-	var login = $(".loginInput").val();
 	var response;
 	function request() {
-		var login = $(".loginInput").val();
 		response = <?php
 		$login=$_POST["login"];
 		$url = "https://webapplis.utc.fr/Edt_ent_rest/myedt/result?login=" . $login;
@@ -17,44 +18,25 @@
 		?>;
 		console.log(response);
 	}
-	function drawTable() {
-		var timetable = new Timetable();
-		timetable.setScope(8, 20); // optional, only whole hours between 0 and 23
-		timetable.addLocations(['LUNDI', 'MARDI', 'MERCREDI', 'JEUDI', 'VENDREDI', 'SAMEDI']);
-		
-		for (var i = 0; i < response.length; ++i) {
-			var event = response[i];
-			console.log(event);
-			timetable.addEvent(event.uv + event.type, event.day, new Date(2016,1,1,event.begin.split(":")[0],event.begin.split(":")[1]), new Date(2016,1,1,event.end.split(":")[0],event.end.split(":")[1]));
-			console.log(timetable);
-			
-		}
-		var renderer = new Timetable.Renderer(timetable);
-		renderer.draw('.timetable'); // any css selector
-	}
 	
 	function main() {
 		request();
 		drawTable();		
 	}
-	</script>	
-
+	</script>
 
 </head>
 
-<body onLoad="main()";>
-	<h1>SR03</h1>
-	<p>Projet : AFFICHAGE GRAPHIQUE D'UN EMPLOI DU TEMPS D'UN ÉTUDIANT</p>
+<body onLoad="main()">
+	<h1>EMPLOI DU TEMPS UTC</h1>
 	<p>Étudiants : Luxin ZHANG, Jianghan LI</p>
-
 	<form action="http://tuxa.sme.utc/~sr03p021/" method="POST">
 		<p>
-			Login: <input type="text" name="login" class="loginInput"/>
-			<input type="submit" value="Submit" />
+			Login: <input type="text" name="login"/>
+			<input type="submit" class="blue" value="Vas-y!" />
 		</p>
 	</form>
 	<div class="timetable"></div>
-
 </body>
 </html>
 
