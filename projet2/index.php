@@ -29,7 +29,7 @@
 
 <body onLoad="main()">
 	<h1>EMPLOI DU TEMPS UTC</h1>
-	<p>Étudiants : Luxin ZHANG, Jianghan LI</p>
+	<p>Étudiants : Luxin ZHANG, Jianghan LI, Mengjia SUI</p>
 	<form action="http://tuxa.sme.utc/~sr03p021/" method="POST">
 		<p>
 			Login: <input type="text" name="login"/>
