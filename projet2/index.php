@@ -49,7 +49,10 @@
 	<p>Étudiants : Luxin ZHANG, Jianghan LI, Mengjia SUI</p>
 	<form action="http://tuxa.sme.utc/~sr03p021/" method="POST">
 		<p>
-			Login: <input type="text" name="login1"/> <input type="text" name="login2"/>
+			Login: 
+			<input type="text" name="login1"/> 
+			Vs 
+			<input type="text" name="login2"/>
 			<input type="submit" class="blue" value="Vas-y!" />
 		</p>
 	</form>

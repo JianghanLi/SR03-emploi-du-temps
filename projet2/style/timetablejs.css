@@ -1,8 +1,3 @@
-body{
-	background:#FAE03C;
-	font-size:15px
-	}
-
 .timetable {
     box-sizing: border-box
 }
@@ -147,12 +142,11 @@ body{
 }
 .timetable ul.room-timeline li:before {
     background-image: linear-gradient(to right, #E5E5E5 1px, transparent 1px);
-    background-size: 17px auto; /*used to be 24*/
+    background-size: 17px auto; /*grille size, used to be 24px*/
 }
-/* this size is changed used to be 24, 96 */
 .timetable ul.room-timeline li:after {
     background-image: linear-gradient(to right, #E5E5E5, #E5E5E5 1px, #F4F4F4 1px, #F4F4F4 2px, #E5E5E5 2px, #E5E5E5 3px, transparent 3px, transparent);
-    background-size: 68px auto; /*used to be 96*/
+    background-size: 68px auto; /*grille size, used to be 96px*/
     background-position: -2px 0
 }
 .timetable .time-entry {

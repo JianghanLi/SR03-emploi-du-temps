@@ -1,7 +1,7 @@
 function drawTable() {
 	var timetable = new Timetable();
 	timetable.setScope(8, 20); // optional, only whole hours between 0 and 23
-	if(response1.length > 0 && response2.length > 0) {
+	if(response1.length > 0 && response2.length > 0 && login1 != login2) {
 		addLocation(timetable, login1, login2);
 		addEvent(timetable, response1, login1)
 		addEvent(timetable, response2, login2)
@@ -33,9 +33,6 @@ function addLocation(timetable, daySuffix1, daySuffix2) {
 function addEvent(timetable, response, daySuffix) {
 	for (var i = 0; i < response.length; ++i) {
 		var event = response[i];
-		console.log(event);
-		console.log(daySuffix);
-		console.log(event.day.slice(0,3) + " " + daySuffix);
 		timetable.addEvent(
 			event.uv + " " + event.type + " " + event.begin,
 			event.day.slice(0,3) + " " + daySuffix, 
