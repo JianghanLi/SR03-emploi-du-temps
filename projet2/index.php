@@ -12,11 +12,11 @@
 	var login1 = "", login2 = "";
 	function request() {
 		login1 = <?php
-		$login1=$_POST["login1"];
+		$login1 = substr($_POST["login1"], 0, 8);
 		echo "'$login1'";
 		?>;		
 		login2 = <?php
-		$login2=$_POST["login2"];
+		$login2 = substr($_POST["login2"], 0, 8);
 		echo "'$login2'";
 		?>;	
 		response1 = <?php
