@@ -8,9 +8,8 @@
 	<script src="lib/jquery-1.12.1.min.js"></script>
 	<script type="text/javascript" src="drawTable.js"></script>
 	<script type="text/javascript">
-	var response1 = [];
-	var response2 = [];
-	var login1, login2;
+	var response1 = [], response2 = [];
+	var login1 = "", login2 = "";
 	function request() {
 		login1 = <?php
 		$login1=$_POST["login1"];
@@ -45,6 +44,7 @@
 </head>
 
 <body onLoad="main()">
+	<title>EMPLOI DU TEMPS UTC</title> 
 	<h1>EMPLOI DU TEMPS UTC</h1>
 	<p>Étudiants : Luxin ZHANG, Jianghan LI, Mengjia SUI</p>
 	<form action="http://tuxa.sme.utc/~sr03p021/" method="POST">

@@ -88,7 +88,7 @@ body{
     position: relative
 }
 .timetable section header li:not(:last-of-type) {
-    width: 80px; /* event width: 96px*/
+    width: 68px; /* event width: 96px*/
 }
 .timetable section header li .time-label {
     display: block;
@@ -147,12 +147,12 @@ body{
 }
 .timetable ul.room-timeline li:before {
     background-image: linear-gradient(to right, #E5E5E5 1px, transparent 1px);
-    background-size: 20px auto; /*used to be 24*/
+    background-size: 17px auto; /*used to be 24*/
 }
 /* this size is changed used to be 24, 96 */
 .timetable ul.room-timeline li:after {
     background-image: linear-gradient(to right, #E5E5E5, #E5E5E5 1px, #F4F4F4 1px, #F4F4F4 2px, #E5E5E5 2px, #E5E5E5 3px, transparent 3px, transparent);
-    background-size: 80px auto; /*used to be 96*/
+    background-size: 68px auto; /*used to be 96*/
     background-position: -2px 0
 }
 .timetable .time-entry {
