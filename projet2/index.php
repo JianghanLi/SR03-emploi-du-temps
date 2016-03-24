@@ -8,15 +8,32 @@
 	<script src="lib/jquery-1.12.1.min.js"></script>
 	<script type="text/javascript" src="drawTable.js"></script>
 	<script type="text/javascript">
-	var response;
+	var response1 = [];
+	var response2 = [];
+	var login1, login2;
 	function request() {
-		response = <?php
-		$login=$_POST["login"];
-		$url = "https://webapplis.utc.fr/Edt_ent_rest/myedt/result?login=" . $login;
+		login1 = <?php
+		$login1=$_POST["login1"];
+		echo "'$login1'";
+		?>;		
+		login2 = <?php
+		$login2=$_POST["login2"];
+		echo "'$login2'";
+		?>;	
+		response1 = <?php
+		$url = "https://webapplis.utc.fr/Edt_ent_rest/myedt/result?login=" . $login1;
 		$html = file_get_contents($url);
 		echo $html;
 		?>;
-		console.log(response);
+		response2 = <?php
+		$url = "https://webapplis.utc.fr/Edt_ent_rest/myedt/result?login=" . $login2;
+		$html = file_get_contents($url);
+		echo $html;
+		?>;
+		$('input[name="login1"]')[0].value=login1;
+		$('input[name="login2"]')[0].value=login2;
+		console.log(response1);
+		console.log(response2);
 	}
 	
 	function main() {
@@ -32,7 +49,7 @@
 	<p>Étudiants : Luxin ZHANG, Jianghan LI, Mengjia SUI</p>
 	<form action="http://tuxa.sme.utc/~sr03p021/" method="POST">
 		<p>
-			Login: <input type="text" name="login"/>
+			Login: <input type="text" name="login1"/> <input type="text" name="login2"/>
 			<input type="submit" class="blue" value="Vas-y!" />
 		</p>
 	</form>
