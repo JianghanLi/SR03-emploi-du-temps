@@ -34,7 +34,7 @@ function addEvent(timetable, response, daySuffix) {
 	for (var i = 0; i < response.length; ++i) {
 		var event = response[i];
 		timetable.addEvent(
-			event.uv + " " + event.type + " " + event.begin,
+			event.uv + " " + event.type + " " + event.room,
 			event.day.slice(0,3) + " " + daySuffix, 
 			new Date(2016,1,1,event.begin.split(":")[0],event.begin.split(":")[1]), 
 			new Date(2016,1,1,event.end.split(":")[0],event.end.split(":")[1]));			
